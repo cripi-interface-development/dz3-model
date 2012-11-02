@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content='text/css' charset='utf-8'/>
+<title>Выравнивание</title>
+<style>
+  body {
+    margin:0;
+    padding:0;
+  }
+  div.first {
+    background-color: #ccff99;
+    width: 100px;
+    height: 100px;
+    margin: auto
+  }
+  div.container1 {
+    float: left;
+    width: 50%;
+    padding-left: 50px;
+  }
+  div.second {
+    background-color: #cc99cc;
+    float:right;
+    width: 100px;
+    height: 100px;
+  }
+  div.container2 {
+    width: 50%;
+    padding-right: 50px;
+    float: right;
+  }
+  div.third {
+    background-color: #660033;
+    width: 100px;
+    height: 100px;
+  }
+  div.forth {
+    background-color: #ffcccc;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left:50%;
+    margin-left: -50px;
+  } 
+</style>
+</head>
+<body>
+<!-- the one with the table -->
+<table width='100%' >
+<tr>
+<td align='center'>
+<div class='third'></div>
+</td>
+</tr>
+</table>
+<!-- -->
+<div class = 'forth'></div>
+<div class = 'first'></div>
+<div class = 'container2'>
+  <div class = 'third'></div>
+</div>
+<div class = 'container1'>
+  <div class = 'second'></div> 
+</div>
+</body>
+</html>
