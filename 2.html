@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content='text/css' charset='utf-8'/>
+<title>Выравнивание</title>
+<style>
+body {
+    margin:0;
+    padding:0;
+  }
+div.first {
+    background-color: #ccff99;
+    height: 100px;
+    display: table;
+    margin: 0 auto;
+  }
+td.co {
+    background-color: #ccccff;
+    height: 100px;
+}
+table.co {
+    margin: 0 auto;
+}
+div.ext {
+    float: left;
+    position: relative;
+    left:50%
+}
+div.int {
+    background-color: #ffff99;
+    height: 100px;
+    position: relative;
+    right: 50%
+}
+</style>
+</head>
+<body>
+<table class='co'>
+<tr>
+<td class ='co'>
+one does not simply walk into Mordor
+</td>
+</tr>
+</table>
+
+<div class='first'>one does not simply walk into Mordor</div>
+<div class='ext'>
+  <div class='int'>some stuff</div>
+</div>
+</body>
+</html>
