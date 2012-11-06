@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>3.1</title>
+		<style>
+			BODY {
+				background: #efefef;
+				}
+			.title {
+				font: bold 60px Calibri;
+				display: block;
+				text-align: center;
+				margin-top: 50px;
+				}
+			.subtitle {
+				font: normal 18px Calibri;
+				display: block;
+				text-align: center;
+				margin-bottom: 70px;
+				}
+			.description {
+				font: italic 14px Calibri;
+				color: #99CCFF;
+				display: block;
+				text-align: center;
+				margin-bottom: 4px;
+				margin-top: 20px;
+				}
+			.center_div1 {
+				width: 100px;
+				height: 100px;
+				background: lightblue;
+				margin: 0 auto;
+				}
+			.center_div2 {
+				width: 100px;
+				height: 100px;
+				background: lightblue;
+				display: inline-block;
+				}
+			.parent_div {
+				width: 100%;
+				height: 100px;
+				text-align: center;
+				background: #ececec;
+				}
+			.center_table {
+				width: 100px;
+				height: 100px;
+				background: lightblue;
+				}				
+		</style>
+	</head>
+	<body>
+		<span class="title">Домашка 3.1</span>
+		<span class="subtitle">Выравнивание блока 100х100 по центру</span>
+		
+		<span class="description">margin: 0 auto (можно и просто margin: auto)</span>
+		<div class="center_div1"></div>
+		
+		<span class="description">table align="center"</span>
+		<table class="center_table" align="center"><tr><td></td></tr></table>
+		
+		<span class="description">
+			parent_div text-align:center;<br>
+			div display: inline-block;<br>
+		</span>
+		<div class="parent_div">
+			<div class="center_div2"></div>
+		</div>
+		
+		<span class="description">
+			table text-align: center;<br>
+			td width: 1280px;<br>
+			div display: inline-block;<br>
+		</span>
+		<table style="text-align: center; background: #ececec">
+			<tr>
+				<td style="width: 1280px">
+					<div class="center_div2"></div>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
