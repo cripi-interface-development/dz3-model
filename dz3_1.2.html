@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset=utf-8> 
+        <title>dz3_1.2</title>
+		<style>
+			body {
+				font: .8125em/1.5 Arial, sans-serif;
+			}
+			.container2 {
+				float: left;
+				position: relative;
+				left: 50%;
+			}
+			
+			.container3 {
+				position: relative;
+				top: 110px;
+				left: -43px;
+			}
+
+			#container4 {
+				top: 120px;
+				float:right;
+				position:relative;
+				right:50%;
+			}
+
+			#block1, #block2, #block3, #block4 {
+				height: 100px;
+				background-color: blue;
+				border: solid 1px black;
+			}
+			#block1 {
+				display: table;
+				margin: 10px auto;
+			}
+			#block2 {
+				float: left;
+				position: relative;
+				left: -50%;
+			}
+			#block3 {
+				display:table;
+				margin:0 auto;
+			}
+			#block4 {
+				float:left;
+				position:relative;
+				left: 50%;
+			}
+		</style>
+    </head>
+    <body>
+	<div id="block1">Lorem Ipsum!1</div>
+	<div class="container2">
+		<div id="block2">Lorem Ipsum!12</div>
+	</div>
+	<div class="container3">
+		<div id="block3">Lorem Ipsum!123</div>
+	</div>
+    <div id="container4">
+		<div id="block4">Lorem Ipsum!1234</div>
+    </div>
+	</body>
+</html>
