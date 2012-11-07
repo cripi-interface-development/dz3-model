@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset="UTF-8">
+                <title>Выравнивание элемента 100px х Auto по центру по горизонтали</title>
+                <style>
+                        span {
+                                display:inline-block;
+                                height:100px;                               
+                        }
+                        
+                        /* 1st */
+                        .v1-container {
+                                text-align: center;
+                        }
+                        .v1 {
+                                background:#99ccff;
+                        }
+                        
+                        /* 2nd align="center"*/
+                        .v2 {
+                                background: #66ccff;
+                        }
+                        
+                        /* 3rd */
+                        .v3-table {
+                                display:table;
+                                width:100%;
+                                text-align:center;                                
+                        }
+                        .v3 {
+                                background:#33ccff;
+                        }
+                        
+                        /* 4th */
+                        table {
+                                width: 100%;
+                                text-align:center;
+                        } 
+                        .v4 {
+                                background:#00ccff;
+                        }                        
+                </style>
+        </head>
+        <body>
+                <div class="v1-container">
+                        <span class="v1">Способ №1</span>
+                </div>
+                
+                <div align="center">
+                        <span class="v2">Способ №2</span>
+                </div>                              
+                
+                <div class="v3-table">
+                        <div>
+                                <span class="v3">Способ №3</span>
+                        </div>
+                </div>
+
+                <table>
+                        <tr>
+                                <td>
+                                        <span class="v4">Способ №4</span>
+                                </td>
+                        </tr>
+                </table>                
+    </body>
+</html>

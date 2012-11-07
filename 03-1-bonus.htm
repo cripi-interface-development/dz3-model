@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+        <head>                
+                <meta charset="UTF-8">
+                <title>Выравнивание элемента 100х100px по центру по вертикали</title>
+                <style>
+                        * {
+                                margin:0;
+                                padding:0;
+                        }
+                        
+                        .v1, .v2{                                
+                                width:100px;
+                                height:100px;
+                        }
+                        
+                        /* 1st */
+                        .v1 {
+                                position:absolute;
+                                top:50%;
+                                margin-top: -50px;
+                                background:#99ccff;
+                        }
+                        
+                        /* 2nd */
+                        .v2-table {                                                          
+                                position:absolute;
+                                left:100px;
+                                display:table;
+                                float:left;
+                                height:100%;
+                        }
+                         .v2-table-cell {
+                                 display:table-cell;                                
+                                 vertical-align: middle;                                 
+                         }                         
+                         .v2 {
+                                 background:#66ccff;
+                        }    
+                </style>
+        </head>
+        <body>
+                <div class="v1">1</div>
+                
+                <div class="v2-table">
+                        <div class="v2-table-cell">
+                                <div class="v2">2</div>
+                        </div>
+                </div>                
+        </body>
+</html>

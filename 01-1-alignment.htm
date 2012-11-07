@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+        <head>                
+                <meta charset="UTF-8">
+                <title>Выравнивание элемента 100x100px по центру по горизонтали</title>
+                <style>
+                        .v1, .v2, .v3, .v4, .v5, .v6 {
+                                width: 100px;
+                                height: 100px;
+                                text-align:center;                                
+                        }                         
+                        
+                        /* 1st */
+                        .v1 {
+                                margin: 0 auto;
+                                background: #99ccff;
+                        }
+                        
+                        /* 2nd */
+                        .v2-container {
+                                width: 100%;
+                                text-align: center;
+                        }
+                        .v2 {
+                                display: inline-block;                                
+                                background: #66ccff;
+                        }
+                        
+                        /* 3rd */                        
+                        .v3-container {
+                                float:right;
+                                width:50%;
+                        }
+                        .v3 {
+                                margin-left:-50px;                               
+                                background:#33ccff;
+                        }
+                        
+                        /* 4th */
+                        table {
+                                width:100%;                               
+                        }
+                        .v4 {
+                                background:#00ccff;
+                        }
+                        
+                        /* 5th */
+                        .v5 {
+                                position:relative;
+                                left: 50%;
+                                margin-left: -50px;
+                                background:#0099cc;
+                        }	    
+                        
+                        /* 6th */
+                        .v6 {
+                                position:absolute;
+                                left:50%;
+                                margin-left: -50px;                                
+                                background:#336699;
+                        }
+                </style>
+        </head>
+        <body>
+                <div class="v1"> 1 </div>
+                
+                <div class="v2-container">
+                        <div class="v2"> 2 </div>
+                </div>
+                
+                <div class="v3-container">
+                        <div class="v3"> 3 </div>
+                </div>                
+                
+                <table>
+                        <tr>
+                                <td align="center">		    
+                                        <div class="v4"> 4 </div>
+                                </td>
+                        </tr>
+                </table>
+                
+                <div class="v5"> 5 </div>
+                
+                <div class="v6"> 6 </div>
+    </body>
+</html>
