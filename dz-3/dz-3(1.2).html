@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf=-8" />
+	<title>dz-1.2</title>
+	<style>
+		* {margin: 0; padding: 0;}
+
+		body, html { text-align: center; }
+		pre { position: absolute; bottom: 10px; left: 10px; text-align: left; z-index: -10; }
+		div { height: 80px; padding: 10px; background: #ffffa2; border: 1px solid red; text-align: left; }
+		div p span { display: none; }
+		a { font: bold 18px Arial; } a:hover { text-decoration: none; color: blue; }
+
+		#box-1 { display: table; margin: 20px auto; }
+
+		#box-2 { display: inline-block; margin-top: 20px; }
+	</style>
+
+	<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+	<script>
+		$(function() {
+			$('a').toggle(function() {
+				$(this).text('HIDE TEXT').next().fadeIn(300);
+			}, function() {
+				$(this).text('ADD TEXT').next().fadeOut(200);
+			});
+		});
+	</script>
+</head>
+
+<body>
+<pre>
+<h2>Общие стили</h2>
+<code>* {margin: 0; padding: 0;}
+
+body, html { text-align: center; }
+
+div {
+	max-width: 800px;
+	height: 80px;
+	padding: 10px;
+	background: #ffffa2;
+	border: 1px solid red;
+	text-align: left;
+}
+
+<h2>Стили для центрируемых блоков</h2>
+#box-1 { 
+	display: table;
+	margin: 20px auto;
+}
+
+#box-2 {
+	display: inline-block;
+	margin-top: 20px;
+}
+</code>
+<blockquote style="color: red; font: bold 16px Arial;">jQuery используется только для добавления и скрытия текста.</blockquote>
+<code>$(function() {
+	$('a').toggle(function() {
+		$(this).text('HIDE TEXT').next().fadeIn(300);
+	}, function() {
+		$(this).text('ADD TEXT').next().fadeOut(200);
+	});
+});
+</code>
+</pre>
+
+	<div id="box-1">
+		<p><a href="#">ADD TEXT</a> <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></p>
+	</div>
+
+	<div id="box-2">
+		<p><a href="#">ADD TEXT</a> <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+	</div>
+</body>
+</html>
+
