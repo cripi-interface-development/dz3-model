@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset="UTF-8">
+                <title>Выравнивание элемента 100px х Auto по центру по вертикали</title>                
+                <style>
+                        * {
+                                margin:0;
+                                padding:0;                        
+                        }
+                        
+                        .v1, .v2 {
+                                display:inline-block;                               
+                        }
+                        
+                        /* 1st */
+                        .v1-table {
+                                position:absolute;
+                                display:table;                                
+                                height:100%;
+                        }
+                        .v1-table-cell {
+                                display:table-cell;
+                                vertical-align: middle;
+                        }                        
+                        .v1 {                               
+                                line-height: 100px;
+                                background: #99ccff;
+                        }
+                        
+                        /* 2nd */
+                        .v2-container {                               
+                                position:absolute;
+                                top:50%;
+                                left:150px;                                
+                                height:100px;
+                                margin-top: -50px;
+                        }
+                        .v2 {
+                                line-height: 100px;
+                                background:#66ccff;
+                        }
+                </style>
+        </head>
+        <body>
+                <div class="v1-table">
+                        <div class="v1-table-cell">
+                                <span class="v1">Способ №1</span>
+                        </div>
+                </div>
+                
+                <div class="v2-container">
+                                <span class="v2">Способ №2</span>
+                </div>
+                
+        </body>
+</html>
