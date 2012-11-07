@@ -1,0 +1,19 @@
+﻿html, body {
+	margin: 0;
+	height: 100%;
+}
+
+aside {
+	position: absolute;
+	width: 300px;
+	height: 100%;
+	background-color: gray;
+}
+
+article {
+	position: absolute;
+	right: 0;
+	left: 300px;
+	height: 100%;
+	background-color: silver;
+}
