@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>главная</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<style type="text/css">
+body {
+    padding:30px;
+    background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyBAMAAADsEZWCAAAAD1BMVEX9/f35+fn8/Pz7+/v6+vreGhydAAACQUlEQVQYGQXBAY0EMAhFwWYdkEXABWpgAQP0P/+abuaYV8QY6xp15LquT1MH1LNgDq666z3eQZ2Xa2Yv1xznDaTZi+xTY2YGawBqaHgZfXoNMzNzvausaUXWVB6a7lkwNACAGvoQEZG8WdcAAErgTATvKgaULDBoKjldybuKabwBvIGXHKAiRijBYI0xAx2A7oVKsAcwC+ismTlmL+Z7eUOieVccAB94kS956wAvR0foeoM6IuatGY5idKD53hWK1GgBXQ0c80HjWsWlBw11hfkBLlCrSDQExMD6ASXAvkjUHSgHLQe64q55fS5T0XTNCg5kN7DK8e4e0PCo0zTmaAGvnzADxfydBmChgfqBOQCcXHPWTDHeNeYGYHAKWHNIFCOge0T1KYB1aF6MgIh5t/I0482a17yrWfP43BcxBwAAqIvWiA+a5ph5oqlckn3rimtm2DE8gQpQzbugyxocg2T9xaC4L8EHQMeDu2hA+S4AwLoOwTgFKN8FA2Dp0wGqAQAQwLKVJxtXLw0MNO2sWeVJDFgr+N59Q3tizpyBAVaDD3RnN2ZwFq7zlsDRvojoMTOdBXxZ1KOBSOrC1lkwBwPdd6GuVyLiAKauLUDRFK5LZRwYV/YWQA3garrrmJK4UEtcFvDRBY4JNVDQOCzkuwvH8B57U4mZv1gUcVccAKgl10wRQMRAnRigYr3X7EVMEzFOnBjMFblgPhUxqGbVpwdDkeugeRE99FBzqOsVMRi6UJFdCcGhxyviAgwohhdL8w9WegM3i2rjpwAAAABJRU5ErkJggg==");
+    font-family:arial;
+}
+.box{
+    width:100px;
+    height:100px;
+    border:1px dashed red;
+    background-color:rgba(255, 9, 4, 0.25);
+    margin-bottom:20px;
+    font-size:80px;
+    line-height:100px;
+    text-align:center;
+    vertical-align:middle;
+    color:#a3a3a3;
+    text-shadow:-1px -1px 1px #f9f9f9,1px 1px 1px #656565;
+}
+.box-floating{
+
+    min-width:100px;
+    height:100px;
+    border:1px dashed #08ff00;
+    background-color:rgba(2, 255, 4, 0.24);
+    margin-bottom:20px;
+    font-size:55px;
+    line-height:50px;
+    text-align:center;
+    vertical-align:middle;
+    color:#a3a3a3;
+    text-shadow:-1px -1px 1px #f9f9f9,1px 1px 1px #656565;
+    display:inline-block;
+    padding:0 10px;
+}
+.box-floating > span{
+    font-size:15px;
+    display:block;
+}
+</style>
+<h2> Задание 1.1</h2>
+<div class="var-1">
+    <div class="box">1</div>
+</div>
+<style type="text/css">
+.var-1{
+    text-align:center;
+}
+.var-1 .box{
+    display:inline-block;
+}
+</style>
+
+<div class="var-2">
+    <div class="box">2</div>
+</div>
+<style type="text/css">
+    .var-2 {
+
+    }
+    .var-2 .box{
+        margin:20px auto;
+    }
+</style>
+
+<div class="var-3">
+    <div class="box">3</div>
+</div>
+<style type="text/css">
+    .var-3 {
+        position:relative;
+        height:120px;
+    }
+    .var-3 .box{
+        position:absolute;
+        left:50%;
+        margin-left:-51px;
+    }
+</style>
+
+<div class="var-4">
+    <div class="wrap">
+        <div class="box">4</div>
+    </div>
+</div>
+<style type="text/css">
+    .var-4 {
+        position:relative;
+        height:120px;
+    }
+    .var-4 .wrap{
+        position:absolute;
+        left:50%;
+    }
+    .var-4 .box{
+        margin-left:-50%;
+    }
+</style>
+<div class="var-5">
+    <div class="wrap">
+        <div class="box">5</div>
+    </div>
+</div>
+<style type="text/css">
+    .var-5 {
+    }
+    .var-5 .wrap{
+        margin-left:50%;
+        display:inline-block;
+    }
+    .var-5 .box{
+        margin-left:-50%;
+    }
+</style>
+<div class="var-6">
+    <div class="wrap">
+        <div class="box">6</div>
+    </div>
+</div>
+<style type="text/css">
+    .var-6 {
+    }
+    .var-6 .wrap{
+        margin-left:50%;
+        display:inline-block;
+    }
+    .var-6 .box{
+        margin-left:-51px;
+    }
+</style>
+
+<div class="var-6">
+    <div class="wrap">
+        <div class="box">6</div>
+    </div>
+</div>
+<style type="text/css">
+    .var-6 {
+    }
+    .var-6 .wrap{
+        margin-left:50%;
+        display:inline-block;
+    }
+    .var-6 .box{
+        margin-left:-51px;
+    }
+</style>
+
+<div class="var-7">
+    <div class="wrap">
+        <div class="box">7</div>
+    </div>
+</div>
+<style type="text/css">
+    .var-7 {
+    }
+    .var-7 .wrap{
+        padding-left:50%;
+        display:inline-block;
+    }
+    .var-7 .box{
+        margin-left:-51px;
+    }
+</style>
+
+
+<div class="var-8">
+    <div class="wrap">
+        <div class="box">8</div>
+    </div>
+</div>
+<style type="text/css">
+    .var-8 {
+        position:relative;
+        height:120px;
+    }
+    .var-8 .wrap{
+        position:absolute;
+        left:50%;
+    }
+    .var-8 .box{
+        position:relative;
+        left:-50%;
+    }
+</style>
+
+<div class="var-9">
+    <div class="befor"></div>
+
+    <div class="box">9</div>
+</div>
+<style type="text/css">
+    .var-9 {
+        display:table;
+        width:100%;
+    }
+    .var-9 .befor{
+        float:left;
+        width:50%;
+        height:10px;
+
+    }
+    .var-9 .box{
+        display:inline-block;
+        margin-left:-51px; /* ну и другие способы сдвинуть в лево из выше упоянутых */
+    }
+</style>
+<div class="var-10">
+    <ul>
+
+        <li class="befor">
+        <li class="box">10
+    </ul>
+</div>
+<style type="text/css">
+    .var-10 ul{
+        margin:0;
+        padding:0;
+    }
+    .var-10 .befor{
+        display:inline-block;
+        width:50%;
+        height:10px;
+    }
+    .var-10 .box{
+        display:inline-block;
+        margin-left:-51px; /* ну и другие способы сдвинуть в лево из выше упоянутых */
+    }
+</style>
+
+<div class="var-11">
+    <div class="wrap">
+        <div class="box">11</div>
+    </div>
+</div>
+<style type="text/css">
+    .var-11 {
+    }
+    .var-11 .wrap{
+        width:50%;
+        text-align:right;
+    }
+    .var-11 .box{
+        display:inline-block;
+        margin-right:-51px; /* ну и другие способы сдвинуть в лево из выше упоянутых */
+    }
+</style>
+
+<!-- с дивами хватит попробуем таблицы -->
+<table class="var-12">
+    <tr class="">
+        <td>
+            <div class="box">
+                12
+            </div>
+        </td>
+    </tr>
+</table>
+<style type="text/css">
+    .var-12 {
+        margin:0;
+        padding:0;
+        width:100%;
+        text-align:center;
+    }
+    .var-12 .box{
+        display:inline-block;
+    }
+    /* тотже  text-align:center; тоько руки все в таблицах ихмазал  */
+</style>
+<table class="var-13">
+    <tr class="">
+        <td></td>
+        <td>
+            <div class="box">
+                13
+            </div>
+        </td>
+        <td></td>
+    </tr>
+</table>
+<style type="text/css">
+    .var-13 {
+        margin:0;
+        padding:0;
+        width:100%;
+        text-align:center;
+    }
+    .var-13 td:first-child,
+    .var-13 td:last-child{
+        width:1000px;
+    }
+    .var-13 .box{
+    }
+    /* а так веселей не совсем явно ))   */
+</style>
+<!--  пдлюс все тоже толко с дивами  -->
+
+
+
+<h2> Задание 1.2</h2>
+<div class="floating-1">
+    <div class="wrap">
+        <div class="box-floating">1
+            <span>
+                какойнибуть не померно большой текст
+            </span>
+        </div>
+    </div>
+    <div class="after"></div>
+</div>
+<style type="text/css">
+    .floating-1 .after {
+        text-align:center;
+    }
+    .floating-1 .wrap{
+        display:run-in;/*  тутже тоже есть место для CSS3  */
+    }
+</style>
+<!--  повторяем тоже самое толко с отнасителными парпметрами  -->
+<div class="floating-2">
+    <div class="box-floating">2
+        <span>
+            какойнибуть не померно большой текст
+        </span>
+    </div>
+</div>
+<style type="text/css">
+    .floating-2 {
+    text-align:center;
+    }
+</style>
+
+<div class="floating-3">
+    <div class="wrap">
+
+        <div class="box-floating">3
+            <span>
+            какойнибуть не померно большой текст
+            </span>
+        </div>
+    </div>
+</div>
+<style type="text/css">
+    .floating-3 {
+        position:relative;
+        height:120px;
+    }
+    .floating-3 .wrap{
+        position:absolute;
+        left:50%;
+    }
+    .floating-3 .box-floating{
+        margin-left:-50%;
+    }
+</style>
+
+
+</body>
+</html>
