@@ -1,0 +1,29 @@
+﻿<!-- с помощью таблицы --><html>
+<head>
+    <title> Выравнивание6</title>
+	<style>
+	.layout { width: 100%; table-layout: fixed; }
+    .layout TD { padding: 7px; vertical-align: top; }
+    .col1 { width: 50%; }
+    .col2 { width: 100px; }
+    TD div {
+	background-color: red;
+    width: 100px;
+	height: 100px;
+    overflow: auto;
+	}
+   .col3 { width: 50%; }
+	</style>
+</head>
+<body>
+    <table class="layout" cellspacing="0">
+    <tr>
+    <td class="col1">колонка1<td>
+    <td class="col2">
+	    <div> Выровнять элемент с шириной и высотой в 100px по центру страницы по горизонтали всеми возможными способами </div>
+    </td>
+    <td class="col3">колонка3</td>
+   </tr>
+  </table>
+</body>
+</html>
