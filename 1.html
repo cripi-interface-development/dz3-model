@@ -1,0 +1,83 @@
+﻿<html>
+<head>
+<meta content='text/css' charset='utf-8'/>
+<title>Выравнивание элемента 10to10 по центру по горизонтали</title>
+<style type="text/css">
+body {
+padding:20;
+}
+div.xx1 {
+background: #FF0000;
+width: 100 px;
+height: 100 px;
+margin: auto;
+}
+div {
+background: #6495ED;
+width: 100 px;
+height: 100 px;
+}
+div.xx4 {
+background: #00008B;
+width: 100px;
+height: 100px;
+position: relative;
+left:50%;
+margin-left: -50px;
+} 
+div.xx5 {
+width:100px;
+height:100px;
+background:#9ACD32;
+position: absolute;
+left: 50%;
+margin-left: -50px;
+}
+div._center
+{
+background: #FFFFFF;
+position: relative;
+width: 100%;
+}
+div._left
+{
+background: #FFFFFF;
+position: relative;
+right: 50%;
+float: right;
+}
+div._right
+{
+position: relative;
+z-index: 1;
+right: -50%;
+}
+</style>
+</head>
+<body >
+<!--Первый-->
+<div class = 'xx1'></div>
+<!--Второй-->
+<table width="100px" align="center">
+<tr>
+	<td> <div></div> </td>
+</tr>
+</table>
+<!--Третий-->
+<div class = 'xx4'></div>
+<!--Четвертый-->
+</div>
+<div class="_center">
+    <div class="_left">
+        <div class="_right" style="margin: 1em 0;">
+        </div>
+    </div>
+</div>
+<!--Пятый-->
+<div class = 'xx5'></div>
+</body>
+</html>
+
+
+
+
