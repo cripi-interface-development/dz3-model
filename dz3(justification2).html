@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Выравнивание, задание 2</title>
+<style type="text/css">
+.element1{
+display: inline-block;
+height: 100px;
+background-color: red;
+}
+.element2{
+height: 100px;
+background-color: orange;
+}
+.element3{
+height: 100px;
+background-color: yellow;
+display: inline-block;
+}
+.wrap{
+margin-top: 50px;
+}
+</style>
+</head>
+<body>
+<div class="wrap" style="text-align: center;">
+	<div class="element1">Какой-нибудь текст</div>
+</div>
+
+<div class="wrap">
+	<center><table>
+		<tr>
+			<td align="center"><div class="element2">Какой-нибудь текст</div></td>
+		</tr>
+	</table></center>
+</div>
+
+<div class="wrap">
+	<center><div class="element3">Какой-нибудь текст</div></center>
+</div>
+
+</body>
+</html>
